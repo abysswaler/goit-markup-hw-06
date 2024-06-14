@@ -394,6 +394,7 @@ img {
 /* -------------------------------------- Our Portfolio -------------------------------------- */
 
 .overlay-image {
+  width: 288px;
   position: relative;
   overflow: hidden;
 }
@@ -629,7 +630,7 @@ img {
 }
 
 ::placeholder {
-  color: #ffffff;
+  color: #8e8f99;
 }
 
 .btn-subscibe {
@@ -769,7 +770,7 @@ img {
 .backdrop {
   position: fixed;
   top: 0;
-  left: 0;
+  /* left: 0; */
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
@@ -791,14 +792,17 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px;
+  min-height: 584px; */
+  width: 288px;
+  min-height: 623px;
   background-color: #fcfcfc;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  padding: 72px 24px 24px 24px;
+  /* padding: 72px 24px 24px 24px; */
+  padding: 72px 16px 24px 16px;
 }
 
 .modal-close-btn {
@@ -845,6 +849,7 @@ img {
 }
 
 .container-modal-form {
+  margin: 0;
 }
 
 .container-label {
@@ -936,7 +941,6 @@ img {
   line-height: 117%;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  align-items: center;
   line-height: 1.17;
 }
 
@@ -944,7 +948,10 @@ img {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  display: block;
+  text-wrap: wrap;
   color: #4d5ae5;
+  margin-left: 26px;
 }
 
 .check {
@@ -1105,6 +1112,10 @@ check:hover {
   width: calc((100% - 24px) / 2);
 }
 
+.overlay-image {
+  width: 356px;
+}
+
 /* ------------------- Footer ------------------------- */
 .footer {
   width: 768px;
@@ -1145,11 +1156,32 @@ check:hover {
   width: 264px;
 }
 
+/* ------------------- Backdrop ------------------------- */
+.backdrop {
+  left: 0;
+}
+
+.modal {
+  width: 408px;
+  min-height: 584px;
+  padding: 72px 24px 24px 24px;
+}
+
+.span {
+  margin-left: 0;
+  display: inline-block;
+  text-wrap: nowrap
+}
+
 }
 
 /* ------------------------------------- Desktop ------------------------------------- */
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1168px) {
+  .container {
+    min-width: 1168px;
+  }
+  
   /* -------------------Header------------------------- */
   .logo,
   .footer-logo {
@@ -1261,8 +1293,9 @@ check:hover {
 }
 /* ------------------- Footer ------------------------- */
 .footer {
+  width: 1168px;
   padding: 100px 0;
-  width: 1440px;
+  margin: 0 auto;
   height: 312px;
 }
 
@@ -1273,18 +1306,27 @@ check:hover {
 
 
 .container-footer {
+  flex-direction: row;
   align-items: baseline;
-  margin-left: 152px;
+  margin-left: 0;
   gap: 0;
 }
 
 .container-footer-list {
 
-  margin-right: 120px;
+  margin: 0 auto;
 }
 
 .footer-socila-media-container {
+  margin-left: 120px;
   margin-right: 80px;
 }
+
+.footer-input-email {
+  padding: 0;
+  margin-left: 8px;
+  opacity: 1;
+}
+
 
 }
