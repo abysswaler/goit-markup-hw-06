@@ -1298,7 +1298,6 @@ check:hover {
 /* ------------------- Footer ------------------------- */
 .footer {
   padding: 100px 0;
-  margin: 0 auto;
   height: 312px;
 }
 
@@ -1313,6 +1312,7 @@ check:hover {
   align-items: baseline;
   margin-left: 0;
   gap: 0;
+  margin: 0 auto;
 }
 
 .container-footer-list {
