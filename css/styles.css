@@ -188,7 +188,6 @@ img {
   ),
   url(../images/people-office-mobile.jpg);
   /* max-width: 1440px; */
-  max-width: 320px;
   height: 432px;
   /* height: 600px; */
   background-repeat: no-repeat;
@@ -300,7 +299,6 @@ img {
 .team {
   background-color: #f4f4fd;
   /* max-width: 1440px; */
-  max-width: 320px;
   margin: 0 auto;
   padding: 96px 0;
   /* padding: 120px 0; */
@@ -490,10 +488,7 @@ img {
   /* padding: 100px 0; */
   /* width: 1440px; */
   padding: 96px 0px;
-  width: 320px;
-
   /* height: 664px; */
-
   margin: 0 auto;
 }
 
@@ -1027,6 +1022,12 @@ check:hover {
     /* margin-right: 332px; */
   }
 
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .contacts {
     display: block;
     font-style: normal;
@@ -1045,7 +1046,6 @@ check:hover {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office-tablet.jpg);
-    max-width: 768px;
     height: 436px;
   }
 
@@ -1084,6 +1084,7 @@ check:hover {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  justify-content: left;
 }
 
 .features-text {
@@ -1096,7 +1097,6 @@ check:hover {
 
   /* -------------------Section 3------------------------- */
   .team {
-    max-width: 768px;
   }
 
   .team-list {
@@ -1118,11 +1118,11 @@ check:hover {
 
 /* ------------------- Footer ------------------------- */
 .footer {
-  width: 768px;
 }
 
 .footer-logo {
   display: inline-block;
+  padding: 0;
 }
 
 .footer-text {
@@ -1133,8 +1133,12 @@ check:hover {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
-  margin-left: 102px;
   gap: 72px 24px;
+  padding-left: 108px;
+}
+
+.container-socialmedia-list {
+  margin-bottom: 0;
 }
 
 .footer-socialmedia-text {
@@ -1203,6 +1207,7 @@ check:hover {
 
   .contacts-list {
     display: flex;
+    flex-direction: row;
     gap: 40px;
   }
 
@@ -1219,7 +1224,6 @@ check:hover {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-    max-width: 1440px;
     height: 600px;
   }
 
@@ -1256,7 +1260,7 @@ check:hover {
 
   .features-subtitle {
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -1293,7 +1297,6 @@ check:hover {
 }
 /* ------------------- Footer ------------------------- */
 .footer {
-  width: 1168px;
   padding: 100px 0;
   margin: 0 auto;
   height: 312px;
